@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="ratio">
+        <flag name="ratio_1_1" value="0" />
+    </attr>
+    <attr name="scale">
+        <flag name="height" value="0" />
+        <flag name="width" value="1" />
+    </attr>
+
+    <declare-styleable name="RatioCardView">
+        <attr name="ratio" />
+        <attr name="scale" />
+    </declare-styleable>
+
+    <declare-styleable name="RatioConstraintLayout">
+        <attr name="ratio" />
+        <attr name="scale" />
+    </declare-styleable>
+
+    <declare-styleable name="RatioFrameLayout">
+        <attr name="ratio" />
+        <attr name="scale" />
+    </declare-styleable>
+
+    <declare-styleable name="RatioLinearLayout">
+        <attr name="ratio" />
+        <attr name="scale" />
+    </declare-styleable>
+
+    <declare-styleable name="View">
+        <attr name="background_resource" format="integer" />
+    </declare-styleable>
+</resources>

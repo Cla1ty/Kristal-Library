@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ml_margin_very_small">4dp</dimen>
+    <dimen name="ml_margin_small">8dp</dimen>
+    <dimen name="ml_margin">16dp</dimen>
+
+    <dimen name="ml_status_bar">24dp</dimen>
+    <dimen name="ml_toolbar">56dp</dimen>
+    <dimen name="ml_subtitle">486dp</dimen>
+    <dimen name="ml_list_item">72dp</dimen>
+    <dimen name="ml_icon_with_padding">56dp</dimen>
+
+    <dimen name="ml_space_between_content">8dp</dimen>
+
+    <dimen name="ml_avatar">40dp</dimen>
+    <dimen name="ml_icon">24dp</dimen>
+    <dimen name="ml_touch_target">48dp</dimen>
+    <dimen name="ml_button">36dp</dimen>
+
+    <dimen name="ml_app_bar_title_left_padding">72dp</dimen>
+    <dimen name="ml_app_bar_title_bottom_padding">20dp</dimen>
+</resources>
