@@ -17,7 +17,7 @@ import android.view.View
  * |______________________|
  */
 
-class LinearSpanContentDecoration(protected var spanSize: Float, private var edge: Boolean) : RecyclerView.ItemDecoration() {
+class LinearSpanContentDecoration(private var spanSize: Float, private var edge: Boolean) : RecyclerView.ItemDecoration() {
   override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State?) {
     val lIndex = parent.getChildLayoutPosition(view)
     

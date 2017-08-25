@@ -17,8 +17,8 @@ object DeviceInfo {
   var scaledDensity: Float = 0F
     private set
   
-  fun init(pContext: Context) {
-    val lDisplayMetrics = pContext.getResources().getDisplayMetrics()
+  fun init(context: Context) {
+    val lDisplayMetrics = context.resources.displayMetrics
     screenWidth = lDisplayMetrics.widthPixels
     screenHeight = lDisplayMetrics.heightPixels
     density = lDisplayMetrics.density

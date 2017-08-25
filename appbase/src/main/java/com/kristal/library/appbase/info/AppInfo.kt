@@ -20,20 +20,20 @@ object AppInfo {
   var packageName: String = "Unknown"
     private set
   
-  fun init(pContext: Context) {
+  fun init(context: Context) {
     try {
-      val lPackageInfo = pContext.packageManager.getPackageInfo(pContext.packageName, 0)
-      val lInfo = pContext.applicationInfo
-      val stringId = lInfo.labelRes
+      val lPackageInfo = context.packageManager.getPackageInfo(context.packageName, 0)
+      val lInfo = context.applicationInfo
+      val lStringId = lInfo.labelRes
       
-      appName = when (stringId) {
+      appName = when (lStringId) {
         0 -> lInfo.nonLocalizedLabel.toString()
-        else -> pContext.getString(stringId)
+        else -> context.getString(lStringId)
       }
       versionCode = lPackageInfo.versionCode
       versionName = lPackageInfo.versionName
-      packageName = pContext.packageName
-      label = pContext.packageManager.getApplicationLabel(lInfo) as String
+      packageName = context.packageName
+      label = context.packageManager.getApplicationLabel(lInfo) as String
     } catch (e: PackageManager.NameNotFoundException) {
       e.printStackTrace()
     }
